@@ -34,7 +34,7 @@ function Home() {
       <div className="products-grid">
         {products.map((item) => (
           <div key={item.id} className="product-card">
-            <img src={item.image} alt="" />
+            <img src={item.image} alt={item.title} className="product-image" />
 
             <div className="product-title">{item.title.slice(0, 20)}...</div>
 
